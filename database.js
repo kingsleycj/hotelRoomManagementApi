@@ -1,15 +1,22 @@
 const mongoose = require("mongoose");
-const { constants } = require("./constants");
+const constants  = require("./constants");
+const uri = process.env.DATABASE_URI
 
-const connectToMongoDB = (db) => {
+const connectToMongoDB = () => {
   console.log("connecting to MongoDB...");
   mongoose.set("strictQuery", true);
-  mongoose.connect(constants.DATABASE_URI).then(() => {
+  mongoose
+    .connect(uri, {
+      dbName: "hotel-management",
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .then(() => {
       console.log("Successfully Connected to MongoDB!");
-      db();
+      connectToMongoDB();
     })
     .catch((err) => {
-      console.log(err)
+      console.log(err);
       console.log("An error occurred while connecting to MongoDB");
     });
 };
