@@ -13,7 +13,7 @@ const connectToMongoDB = () => {
     })
     .then(() => {
       console.log("Successfully Connected to MongoDB!");
-      connectToMongoDB();
+      // connectToMongoDB();
     })
     .catch((err) => {
       console.log(err);
