@@ -3,12 +3,12 @@
 A hotel management system that can create rooms, edit rooms, fetch a created room, fetch all created rooms
 
 ## Based on the requirements provided, the following was satisfied:
-[x] To create many room types (Must have codeName, price)
-[x] Edit Room Type
-[x] Delete Room Type
-[x] Fetch single room type by Id
-[x] fetch multiple room types
-[ ] Search and filter rooms based on its name, types and prices
+-   [x] To create many room types (Must have codeName, price)
+-   [x] Edit Room Type
+-   [x] Delete Room Type
+-   [x] Fetch single room type by Id
+-   [x] fetch multiple room types
+-   [ ] Search and filter rooms based on its name, types and prices
 
 ## How to run:
 1.  clone repository
