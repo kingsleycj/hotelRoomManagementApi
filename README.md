@@ -2,7 +2,7 @@
 
 A hotel management system that can create rooms, edit rooms, fetch a created room, fetch all created rooms
 
-## Based on the requirements provided, the following was satisfied:
+## Based on the requirements requested, the following was satisfied:
 -   [x] To create many room types (Must have codeName, price)
 -   [x] Edit Room Type
 -   [x] Delete Room Type
