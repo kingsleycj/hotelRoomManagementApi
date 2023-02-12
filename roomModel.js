@@ -1,6 +1,7 @@
-const { model, Schema } = require("mongoose");
+const { model, Schema, Types } = require("mongoose");
 const constants = require("constants");
 const { DATABASES } = constants;
+const ObjectId = Types.ObjectId;
 
 const room_Schema = new Schema (
     {
@@ -14,7 +15,7 @@ const room_Schema = new Schema (
             required: true
         },
         roomType: {
-            type: String,
+            type: ObjectId,
             required: true,
             enum: ['Suites', 'Presidential Suites', 'Deluxe', 'Twin Room']
         },
